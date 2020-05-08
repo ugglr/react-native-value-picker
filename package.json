@@ -1,0 +1,38 @@
+{
+  "name": "react-native-scroll-picker",
+  "version": "0.1.0",
+  "description": "Cross-platform scroll picker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugglr/react-native-scroll-picker.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "picker",
+    "cross-platform",
+    "native",
+    "scroll picker"
+  ],
+  "author": "Carl-W. Igelstrom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ugglr/react-native-scroll-picker/issues"
+  },
+  "homepage": "https://github.com/ugglr/react-native-scroll-picker#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}
