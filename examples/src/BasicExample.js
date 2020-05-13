@@ -21,8 +21,21 @@ function BasicExample() {
           extraData={pickedValue}
           list={MOCK_DATA}
           onItemPress={setPickedValue}
-          selectedColor="blue"
-          labelColor="black"
+        />
+      </View>
+      <Text style={{fontSize: 22}}>
+        We can customize the look by setting the labelColor, separatorColor and
+        selectedColor props
+      </Text>
+      <View style={styles.PickerContainer}>
+        <ScrollPicker
+          currentValue={pickedValue}
+          extraData={pickedValue}
+          list={MOCK_DATA}
+          onItemPress={setPickedValue}
+          labelColor="blue"
+          separatorColor="purple"
+          selectedColor="red"
         />
       </View>
     </View>
@@ -38,9 +51,10 @@ const styles = StyleSheet.create({
   },
   Title: {
     fontSize: 28,
+    marginBottom: 10,
   },
   PickerContainer: {
-    height: 300,
+    height: 180,
     width: '100%',
     alignItems: 'center',
     marginTop: 50,
