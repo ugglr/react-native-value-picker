@@ -1,22 +1,6 @@
 import React from 'react';
 import {FlatList, View, TouchableOpacity, Text, StyleSheet} from 'react-native';
 
-// import { BLUE, DARKEST_GRAY, LIGHT_GRAY } from "../styles/theme";
-
-/* const Item = styled.TouchableOpacity`
-  height: 39;
-  padding-top: 6;
-  padding-bottom: 8;
-  align-items: center;
-  justify-content: center;
-`;
-
-const ItemText = styled.Text`
-  font-size: 17;
-  color: ${(props) => (props.picked ? BLUE : DARKEST_GRAY)};
-  text-align: center;
-`; */
-
 const LIGHT_GRAY = '#DEE2EE';
 
 const ScrollPicker = ({
@@ -25,14 +9,22 @@ const ScrollPicker = ({
   onItemPress,
   currentValue,
   initialNumToRender,
+  labelColor,
+  separatorColor,
+  selectedColor,
 }) => {
   const pickedIndex = list.findIndex(item => item.value === currentValue);
   const ItemHeight = 39.8;
+  const LABEL_COLOR = labelColor || 'black';
+  const SELECTED_COLOR = selectedColor || 'blue';
+  const SEPARATOR_COLOR = separatorColor || LIGHT_GRAY;
 
   const FlatListItemSeparator = () => {
     return (
       // Item Separator
-      <View style={{height: 0.8, width: '100%', backgroundColor: LIGHT_GRAY}} />
+      <View
+        style={{height: 0.8, width: '100%', backgroundColor: SEPARATOR_COLOR}}
+      />
     );
   };
 
@@ -40,9 +32,14 @@ const ScrollPicker = ({
     return (
       <TouchableOpacity style={styles.Row} onPress={() => onItemPress(value)}>
         {pickedIndex === index ? (
-          <Text style={styles.RowTextSelected}>{`${label}`}</Text>
+          <Text
+            style={{
+              ...styles.RowText,
+              color: SELECTED_COLOR,
+            }}>{`${label}`}</Text>
         ) : (
-          <Text style={styles.RowText}>{`${label}`}</Text>
+          <Text
+            style={{...styles.RowText, color: LABEL_COLOR}}>{`${label}`}</Text>
         )}
       </TouchableOpacity>
     );
@@ -83,11 +80,6 @@ const styles = StyleSheet.create({
   RowText: {
     fontSize: 17,
     textAlign: 'center',
-  },
-  RowTextSelected: {
-    fontSize: 17,
-    textAlign: 'center',
-    color: 'blue',
   },
 });
 

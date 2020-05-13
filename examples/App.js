@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 // Example Screens Imports
 import BasicExampleScreen from './src/BasicExample';
+import BottomSheetExampleScreen from './src/BottomSheetExample';
 
 function HomeScreen(props) {
   return (
@@ -12,7 +13,11 @@ function HomeScreen(props) {
       <Text>React Native Scroll Picker</Text>
       <Button
         title="Basic Example"
-        onPress={() => props.navigation.navigate('BasicExample')}
+        onPress={() => props.navigation.navigate('Basic Example')}
+      />
+      <Button
+        title="Bottom Sheet Example"
+        onPress={() => props.navigation.navigate('Bottom Sheet Example')}
       />
     </View>
   );
@@ -25,7 +30,11 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="BasicExample" component={BasicExampleScreen} />
+        <Stack.Screen name="Basic Example" component={BasicExampleScreen} />
+        <Stack.Screen
+          name="Bottom Sheet Example"
+          component={BottomSheetExampleScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
