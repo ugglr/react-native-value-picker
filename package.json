@@ -25,7 +25,7 @@
     "native",
     "scroll picker"
   ],
-  "author": "Carl-W. Igelstrom (ugglr)",
+  "author": "Carl-W. Igelstrom (ugglr) <https://www.carlw.se>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ugglr/react-native-scroll-picker/issues"

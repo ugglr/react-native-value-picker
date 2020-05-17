@@ -20,7 +20,7 @@
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.7.0",
-    "react-native-scroll-picker": "file:../"
+    "react-native-scroll-picker": "../react-native-scroll-picker-0.1.0.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-// import {ScrollPicker} from 'react-native-scroll-picker';
-
-import ScrollPicker from './ScrollPicker';
+import {ScrollPicker} from 'react-native-scroll-picker';
 
 import {MOCK_DATA} from './mockData';
 
 function BasicExample() {
-  const [pickedValue, setPickedValue] = useState(1);
+  const [pickedValue, setPickedValue] = useState(7);
 
   return (
     <View style={styles.Container}>
