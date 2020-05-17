@@ -13,6 +13,10 @@ export const MOCK_DATA = [
   },
   {
     value: 4,
+    label: 'Number 4',
+  },
+  {
+    value: 5,
     label: 'Number 5',
   },
   {
@@ -58,9 +62,5 @@ export const MOCK_DATA = [
   {
     value: 16,
     label: 'Number 16',
-  },
-  {
-    value: 17,
-    label: 'Number 17',
   },
 ];

@@ -23,18 +23,27 @@ function BasicExample() {
           onItemPress={setPickedValue}
         />
       </View>
-      <Text style={{fontSize: 22}}>
+      <Text style={{fontSize: 22, textAlign: 'center'}}>
         We can customize the look by setting the labelColor, separatorColor and
         selectedColor props
       </Text>
       <View style={styles.PickerContainer}>
         <ScrollPicker
+          // We need to tell the picker the current picked value
           currentValue={pickedValue}
+          // The picker is a pure component so we need to tell it
+          // what data it needs to subscribe to, otherwise it won't
+          // re-render
           extraData={pickedValue}
+          // The array of objects which makes up the list
           list={MOCK_DATA}
+          // Callback function to update the picked value
           onItemPress={setPickedValue}
+          // Changes the text color in the list
           labelColor="blue"
+          // Changes color of the row separator in the list
           separatorColor="purple"
+          // Changes color of the text of the picked item in the list
           selectedColor="red"
         />
       </View>
