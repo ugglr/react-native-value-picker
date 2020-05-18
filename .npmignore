@@ -8,5 +8,8 @@ node_modules
 # Runtime data
 tmp
 
+# docs assets.
+assets
+
 # Examples
 examples

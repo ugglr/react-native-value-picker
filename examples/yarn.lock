@@ -5084,9 +5084,10 @@ react-native-screens@^2.7.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.7.0.tgz#2d3cf3c39a665e9ca1c774264fccdb90e7944047"
   integrity sha512-n/23IBOkrTKCfuUd6tFeRkn3lB2QZ3cmvoubRscR0JU/Zl4/ZyKmwnFmUv1/Fr+2GH/H8UTX59kEKDYYg3dMgA==
 
-react-native-value-picker@../react-native-value-picker-0.1.0.tgz:
-  version "0.1.0"
-  resolved "../react-native-value-picker-0.1.0.tgz#775c4598ffcc73bb45798c44990e7a51cd89ebbf"
+react-native-value-picker@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-value-picker/-/react-native-value-picker-0.1.1.tgz#02d93c361763bd3b223be92bd2336f98ea783ed3"
+  integrity sha512-JqV++hZst5oFnXI3quooWgQ5qdrKf5kRPnlWB8xIQSSoYFhpPTbwRJakeIqzGh0nP8a9qZ/HLkY0CdRLn2RPSw==
 
 react-native@0.62.2:
   version "0.62.2"
