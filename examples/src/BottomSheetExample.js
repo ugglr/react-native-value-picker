@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 
-import {ScrollPicker} from 'react-native-scroll-picker';
+import {ScrollPicker} from 'react-native-value-picker';
 
 import {MOCK_DATA} from './mockData';
 

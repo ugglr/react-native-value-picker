@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-import {ScrollPicker} from 'react-native-scroll-picker';
+import {ScrollPicker} from 'react-native-value-picker';
 
 import {MOCK_DATA} from './mockData';
 
