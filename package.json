@@ -1,5 +1,5 @@
 {
-  "name": "react-native-scroll-picker",
+  "name": "react-native-value-picker",
   "version": "0.1.0",
   "description": "Cross-platform scroll picker",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ugglr/react-native-scroll-picker.git"
+    "url": "git+https://github.com/ugglr/react-native-value-picker.git"
   },
   "keywords": [
     "react-native",
@@ -28,9 +28,9 @@
   "author": "Carl-W. Igelstrom (ugglr) <https://www.carlw.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ugglr/react-native-scroll-picker/issues"
+    "url": "https://github.com/ugglr/react-native-value-picker/issues"
   },
-  "homepage": "https://github.com/ugglr/react-native-scroll-picker#readme",
+  "homepage": "https://github.com/ugglr/react-native-value-picker#readme",
   "dependencies": {},
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.59.0"

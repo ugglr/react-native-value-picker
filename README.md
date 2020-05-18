@@ -1,4 +1,4 @@
-# react-native-scroll-picker
+# react-native-value-picker
 
 Cross-Platform iOS style picker for react native.
 
@@ -15,13 +15,13 @@ The Native picker on Android is a modal / dropdown design which is vastly differ
 ### Install into project
 
 ```
-yarn add react-native-scroll-picker
+yarn add react-native-value-picker
 ```
 
 **import and usage**
 
 ```
-import {ScrollPicker} from 'react-native-scroll-picker';
+import {ScrollPicker} from 'react-native-value-picker';
 
         ...
 
@@ -80,13 +80,13 @@ export const MOCK_DATA = [
 Clone project
 
 ```
-git clone https://github.com/ugglr/react-native-scroll-picker.git
+git clone https://github.com/ugglr/react-native-value-picker.git
 ```
 
 move into the examples folder.
 
 ```
-cd react-native-scroll-picker && cd examples
+cd react-native-value-picker && cd examples
 ```
 
 in examples root
@@ -135,7 +135,7 @@ yarn run android
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-import {ScrollPicker} from 'react-native-scroll-picker';
+import {ScrollPicker} from 'react-native-value-picker';
 
 import {MOCK_DATA} from './mockData';
 
@@ -201,7 +201,7 @@ import React, {useRef, useState} from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 
-import {ScrollPicker} from 'react-native-scroll-picker';
+import {ScrollPicker} from 'react-native-value-picker';
 
 import {MOCK_DATA} from './mockData';
 
@@ -211,18 +211,8 @@ function BottomSheetExample() {
 
   return (
     <View style={styles.Container}>
-      <Text style={styles.Title}>Bottom Sheet Example</Text>
-      <Text style={styles.Subtitle}>Picked Value: {pickedValue}</Text>
-      <Text style={styles.Description}>
-        Notice that the scroll picker automatically scrolls to the picked row /
-        Item
-      </Text>
 
-      <Button
-        style={styles.Button}
-        title="Open Picker"
-        onPress={() => refRBSheet.current.open()}
-      />
+    ...
 
       <RBSheet
         ref={refRBSheet}
