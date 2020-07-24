@@ -2,6 +2,7 @@
 ![weekly-downloads-badge](https://img.shields.io/npm/dw/react-native-value-picker)
 ![monthly-downloads-badge](https://img.shields.io/npm/dm/react-native-value-picker)
 ![yearly-downloads-badge](https://img.shields.io/npm/dy/react-native-value-picker)
+![total-downloads-badge](https://img.shields.io/npm/dt/react-native-value-picker)
 ![version-badge](https://img.shields.io/npm/v/react-native-value-picker)
 
 Cross-Platform iOS style picker for react native.
