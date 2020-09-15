@@ -1,6 +1,6 @@
 {
   "name": "react-native-value-picker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cross-platform scroll picker",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ugglr/react-native-value-picker.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "react-native",
